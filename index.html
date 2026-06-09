@@ -203,6 +203,16 @@
   .frame .bar-i{position:absolute; left:22px; bottom:18px; width:0; height:2px; background:var(--amber); transition:width .35s ease}
   .frame:hover .bar-i{width:34px}
 
+  /* ---------- pricing band ---------- */
+  .pricing{text-align:center; padding:clamp(44px,7.5vw,80px) 0 clamp(6px,2vw,14px)}
+  .pricing .stamp{display:inline-block; font-family:var(--mono); font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--amber); border:1px solid rgba(230,151,44,.42); border-radius:4px; padding:7px 14px; margin-bottom:22px}
+  .pricing h2{margin:0 auto; max-width:16ch; font-weight:360; letter-spacing:-.015em; line-height:1.06; font-size:clamp(30px,5.8vw,54px)}
+  .pricing h2 em{font-style:italic; color:var(--amber-hi)}
+  .pricing .chips{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:28px}
+  .pricing .chip{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); background:var(--bg-2); border:1px solid var(--faint); border-radius:999px; padding:9px 16px; display:inline-flex; align-items:center; gap:9px}
+  .pricing .chip::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--amber); flex:none; box-shadow:0 0 7px var(--amber-glow)}
+  .pricing .note{margin:24px auto 0; max-width:44ch; color:var(--muted); font-size:15.5px; line-height:1.6}
+
   /* ---------- footer (film edge print) ---------- */
   footer{border-top:1px solid var(--faint); padding:30px 0 46px}
   .edge{font-family:var(--mono); font-size:11px; letter-spacing:.3em; color:rgba(244,237,225,.18); text-transform:uppercase; white-space:nowrap; overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent); mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent); margin-bottom:24px}
@@ -258,7 +268,7 @@
               <span class="shutter-ring" aria-hidden="true"></span>
               Download on the App Store
             </a>
-            <span class="cta-note">Coming soon · iPhone · iOS 17+</span>
+            <span class="cta-note">Free · iPhone · iOS 17+ · Coming soon</span>
           </div>
         </div>
 
@@ -286,6 +296,20 @@
         <p class="kicker">The idea</p>
         <p>Most phone cameras quietly merge several frames and “fix” your shot before you ever see it. Lazy Cam does the opposite — <em>one frame</em>, then a film look you actually control.</p>
         <p class="small">Pick a look and shoot. When you want more, bend the tone curve, shift colors by hue, add grain, or go black and white. What you see in the viewfinder is what lands in your library — no surprises after the shutter.</p>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="shell" aria-label="Pricing">
+      <div class="pricing">
+        <span class="stamp">The price</span>
+        <h2>Free to use. And it <em>stays</em> free.</h2>
+        <div class="chips">
+          <span class="chip">No subscriptions</span>
+          <span class="chip">No ads</span>
+          <span class="chip">No account</span>
+        </div>
+        <p class="note">Download it, shoot with it, keep every photo — no monthly fee, no catch. Just an optional “buy me a coffee” tip someday if you’d like to support it.</p>
       </div>
     </section>
 
