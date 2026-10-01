@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4FLB2CBK4B.com.notlazy.lazycam"],
+        "components": [
+          { "/": "/p", "comment": "Film preset share links. The preset code is in the fragment." },
+          { "/": "/p/", "comment": "Same, with a trailing slash." }
+        ]
+      }
+    ]
+  }
+}
